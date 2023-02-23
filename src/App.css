@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+body{
+  padding-left: 2%;
+ 
+}
+.img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thin;
+  border-color:  #CCC;
+  width: 9%;
+  height:auto;
+  display:inline-flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info{
+  margin-top: -25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+h2 {
+  display:inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  margin-left: 13%;
+  margin-bottom: 1%;
+  margin-top: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.0vw;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0%;
+  margin-left: 15%;
+  font-size: 1.5vw;
+  font-family: 'Raleway', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.separator {
+list-style: none;
+padding: 0;
+width: 100%;
+padding: .5em 0;
+border-bottom: 1px solid #CCC;
 }
+
+
+ul.searchSeparator {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  }
+
+ul.searchSeparator li {
+  padding: .5em 0;
+  border-bottom: 1px solid rgb(158, 157, 157);
+}
+
+.textArea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.0vh;
+  padding-bottom: 10px;
+}
+
+.button {
+  position: relative;
+  margin-left: 90%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+ 
+}
+
+.accordion {
+  cursor: pointer;
+  color: rgb(129, 127, 127);
+  font-weight:500;
+  font-size: 3.5vw;
+  margin-left: 90%;
+  margin-top:1%;
+  content: \002B;
+
+}
+
+.active, .accordion:hover{
+  color:black;
+  content: \002D;
+}
+
+
+
+
+
+
+
+
+.tag-input {
+  position: relative;
+  margin-left: 15%;
+  
+  border: none;
+  width: 12%;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2vw;
+  border-bottom: 1px solid rgb(177, 175, 175);
+  padding-bottom: 5px;
+  
+}
+
+.tag {
+  margin-left: 1%;
+  font-family: 'Raleway', sans-serif;
+  background: rgb(204, 204, 204);
+  border-radius: 10%;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 2px;
+  position: relative;
+  text-decoration: none;
+ 
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding-left: 14%;
+}
+
+
+
+
+

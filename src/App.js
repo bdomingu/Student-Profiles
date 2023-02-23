@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import './index.css'
 import './App.css';
+import axios from 'axios';
+import Profiles from './components/Profiles.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
+  const url = 'https://api.hatchways.io/assessment/students'
+  const [profiles, setProfiles] = useState("")
+  const [hasSearched, setHasSearched] = useState(false)
+  
+
+ 
+useEffect(() => {
+  const getProfiles = () => {
+
+    axios.get(`${url}`).then((response) => {  
+    setProfiles(response)
+    setHasSearched(true)
+
+    })
+
+  } 
+  getProfiles()
+},[])
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <div>
+      
+        {hasSearched && profiles !== "" ? <Profiles 
+        students={profiles?.data?.students} setStudents={setProfiles} /> : null}
+      </div>
   );
 }
 
